@@ -13,7 +13,9 @@ public abstract class Soldier implements Ability{
         this.type = type;
     }
 
-    public abstract void report();
+    public void report() {
+        System.out.println("Soldier " + name + " here. Type - " + type);
+    }
 
     @Override
     public abstract void useAbility();

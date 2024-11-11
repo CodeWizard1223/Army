@@ -8,7 +8,7 @@ public class Berserk extends Soldier{
 
     @Override
     public void report() {
-        System.out.println("Soldier " + name + " here. Type - " + this.type);
+        super.report();
     }
 
     @Override
