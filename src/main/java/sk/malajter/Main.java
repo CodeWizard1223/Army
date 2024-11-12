@@ -1,4 +1,9 @@
 package sk.malajter;
+import adaptable.Swordsman;
+import defensive.Archer;
+import defensive.Berserk;
+import defensive.Spearman;
+import offensive.Knight;
 import soldiers.*;
 
 public class Main {

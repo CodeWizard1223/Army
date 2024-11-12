@@ -1,8 +1,6 @@
 package soldiers;
 
-import sk.malajter.Ability;
-
-public abstract class Soldier implements Ability{
+public abstract class Soldier {
     protected String name;
     protected int damage;
     protected SoldierType type;
@@ -16,7 +14,4 @@ public abstract class Soldier implements Ability{
     public void report() {
         System.out.println("Soldier " + name + " here. Type - " + type);
     }
-
-    @Override
-    public abstract void useAbility();
 }

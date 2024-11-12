@@ -1,6 +1,10 @@
-package soldiers;
+package offensive;
 
-public class Knight extends Soldier {
+import abilities.Offensive;
+import soldiers.Soldier;
+import soldiers.SoldierType;
+
+public class Knight extends Soldier implements Offensive {
     public Knight(String name, int damage, SoldierType type) {
         super(name, damage, type);
     }
@@ -11,7 +15,11 @@ public class Knight extends Soldier {
     }
 
     @Override
-    public void useAbility() {
+    public void attack() {
+        System.out.println("Knight " + name + " deals " + damage + " damage.");    }
+
+    @Override
+    public void furyAttack() {
         System.out.println("Knight " + name + " deals " + damage + " damage.");
     }
 

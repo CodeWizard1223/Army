@@ -1,5 +1,9 @@
 package soldiers;
 
+import abilities.Defensive;
+import abilities.Offensive;
+import offensive.Knight;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,8 +24,8 @@ public class Army {
     public void commandAttack() {
         System.out.println("\n-------ATTACK--------");
         for (Soldier soldier : soldiers) {
-            if (soldier instanceof Swordsman || soldier instanceof Berserk || soldier instanceof Knight) {
-                soldier.useAbility();
+            if (soldier instanceof Offensive) {
+                ((Offensive) soldier).attack();
             }
         }
     }
@@ -29,8 +33,8 @@ public class Army {
     public void commandDefend() {
         System.out.println("\n-------DEFEND--------");
         for (Soldier soldier : soldiers) {
-            if (soldier instanceof Archer || soldier instanceof Spearman || soldier instanceof Swordsman) {
-                soldier.useAbility();
+            if (soldier instanceof Defensive) {
+                ((Defensive) soldier).defend();
             }
         }
     }
@@ -38,8 +42,8 @@ public class Army {
     public void commandFuryAttack() {
         System.out.println("\n-------FURY ATTACK--------");
         for (Soldier soldier : soldiers) {
-            if (soldier instanceof Knight || soldier instanceof Swordsman || soldier instanceof Berserk) {
-                soldier.useAbility();
+            if (soldier instanceof Offensive) {
+                ((Offensive) soldier).furyAttack();
             }
         }
     }
@@ -47,8 +51,8 @@ public class Army {
     public void commandFireDefend() {
         System.out.println("\n-------FIRE DEFEND--------");
         for (Soldier soldier : soldiers) {
-            if (soldier instanceof Swordsman || soldier instanceof Spearman || soldier instanceof Archer) {
-                soldier.useAbility();
+            if (soldier instanceof Defensive) {
+                ((Defensive) soldier).fireDefend();
             }
         }
     }
