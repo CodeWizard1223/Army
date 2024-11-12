@@ -1,4 +1,4 @@
-package soldiers;
+package sk.malajter;
 
 public enum SoldierType {
     OFFENSIVE,

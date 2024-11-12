@@ -1,4 +1,6 @@
-package soldiers;
+package sk.malajter.soldier;
+
+import sk.malajter.SoldierType;
 
 public abstract class Soldier {
     protected String name;

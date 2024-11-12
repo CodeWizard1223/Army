@@ -1,9 +1,9 @@
-package adaptable;
+package sk.malajter.soldier.adaptable;
 
-import abilities.Defensive;
-import abilities.Offensive;
-import soldiers.Soldier;
-import soldiers.SoldierType;
+import sk.malajter.ability.Defensive;
+import sk.malajter.ability.Offensive;
+import sk.malajter.soldier.Soldier;
+import sk.malajter.SoldierType;
 
 public class Swordsman extends Soldier implements Offensive, Defensive {
 

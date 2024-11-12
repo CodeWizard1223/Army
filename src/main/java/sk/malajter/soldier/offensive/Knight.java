@@ -1,8 +1,8 @@
-package offensive;
+package sk.malajter.soldier.offensive;
 
-import abilities.Offensive;
-import soldiers.Soldier;
-import soldiers.SoldierType;
+import sk.malajter.ability.Offensive;
+import sk.malajter.soldier.Soldier;
+import sk.malajter.SoldierType;
 
 public class Knight extends Soldier implements Offensive {
     public Knight(String name, int damage, SoldierType type) {

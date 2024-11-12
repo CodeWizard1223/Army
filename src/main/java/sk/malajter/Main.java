@@ -1,10 +1,9 @@
 package sk.malajter;
-import adaptable.Swordsman;
-import defensive.Archer;
-import defensive.Berserk;
-import defensive.Spearman;
-import offensive.Knight;
-import soldiers.*;
+import sk.malajter.soldier.adaptable.Swordsman;
+import sk.malajter.soldier.defensive.Archer;
+import sk.malajter.soldier.defensive.Berserk;
+import sk.malajter.soldier.defensive.Spearman;
+import sk.malajter.soldier.offensive.Knight;
 
 public class Main {
     public static void main(String[] args) {

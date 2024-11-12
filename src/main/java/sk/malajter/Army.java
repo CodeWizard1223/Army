@@ -1,8 +1,9 @@
-package soldiers;
+package sk.malajter;
 
-import abilities.Defensive;
-import abilities.Offensive;
-import offensive.Knight;
+import sk.malajter.ability.Defensive;
+import sk.malajter.ability.Offensive;
+import sk.malajter.soldier.Soldier;
+import sk.malajter.soldier.offensive.Knight;
 
 import java.util.ArrayList;
 import java.util.List;

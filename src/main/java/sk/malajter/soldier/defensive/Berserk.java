@@ -1,8 +1,8 @@
-package defensive;
+package sk.malajter.soldier.defensive;
 
-import abilities.Offensive;
-import soldiers.Soldier;
-import soldiers.SoldierType;
+import sk.malajter.ability.Offensive;
+import sk.malajter.soldier.Soldier;
+import sk.malajter.SoldierType;
 
 public class Berserk extends Soldier implements Offensive {
 

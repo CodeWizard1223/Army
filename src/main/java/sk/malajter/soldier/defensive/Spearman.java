@@ -1,8 +1,8 @@
-package defensive;
+package sk.malajter.soldier.defensive;
 
-import abilities.Defensive;
-import soldiers.Soldier;
-import soldiers.SoldierType;
+import sk.malajter.ability.Defensive;
+import sk.malajter.soldier.Soldier;
+import sk.malajter.SoldierType;
 
 public class Spearman extends Soldier implements Defensive {
     public Spearman(String name, int damage, SoldierType type) {

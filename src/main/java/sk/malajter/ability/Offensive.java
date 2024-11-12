@@ -1,4 +1,4 @@
-package abilities;
+package sk.malajter.ability;
 
 public interface Offensive {
 
